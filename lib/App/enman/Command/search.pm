@@ -7,6 +7,7 @@ use LWP::Simple;
 sub execute {
     my ( $self, $opts, $args ) = @_;
     my $query = join( "", @{$args} );
+    info "Searching '$query' on the enman db...";
     my @matches = &search($query);
     notice "No matches for '$query'" and return 1 if @matches == 0;
     notice @matches . " results for '$query'";
@@ -19,7 +20,6 @@ sub execute {
 
 sub search {
     my ($string) = shift;
-    info "Searching '$string' on the enman db...";
     my $enman = get( App::enman::ENMAN_DB() );
     my @enman_db = split( /\n/, $enman );
     my @matches;
