@@ -6,7 +6,7 @@ use constant ETPREPO_DIR => $ENV{ETPREPO_DIR}
     || "/etc/entropy/repositories.conf.d/";
 use constant ENMAN_DB => $ENV{ENMAN_DB}
     || "https://raw.githubusercontent.com/Spike-Pentesting/enman-db/master/enman.db";
-    use constant ETPSUFFIX => "entropy_enman_";
+use constant ETPSUFFIX => "entropy_enman_";
 our $VERSION = "0.1";
 
 1;
