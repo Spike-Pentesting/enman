@@ -38,11 +38,17 @@ sub search {
     my @enman_db = split( /\n/, $enman );
     my @matches;
     foreach my $repo (@enman_db) {
+        my ( $repo_name, $repo_url ) = split( ':', $repo, 2 );
+
+        #if exact match return only the unique(should be) result
+        if ( $repo_name eq $string ) {
+            return ( [ $repo_name, $repo_url ] );
+        }
 
         #enabling regex search, not quoted
-        push( @matches, [ +split( ':', $repo, 2 ) ] )
-            if ( $repo =~ /$string/i );
-
+        elsif ( $repo =~ /$string/i ) {
+            push( @matches, [ $repo_name, $repo_url ] );
+        }
     }
     return @matches;
 }
