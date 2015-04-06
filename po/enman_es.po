@@ -1,7 +1,7 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) YEAR "mudler"
 # This file is distributed under the same license as the PACKAGE package.
-# 
+#
 # Translators:
 # necrose99 <mike@michaellawrenceit.com>, 2015
 msgid ""
@@ -11,11 +11,12 @@ msgstr ""
 "POT-Creation-Date: 2015-04-06 18:51+0200\n"
 "PO-Revision-Date: 2015-04-06 17:51+0000\n"
 "Last-Translator: necrose99 <mike@michaellawrenceit.com>\n"
-"Language-Team: Spanish (http://www.transifex.com/projects/p/enman/language/es/)\n"
+"Language-Team: Spanish (http://www.transifex.com/projects/p/enman/language/"
+"es/)\n"
+"Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: es\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: lib/App/enman/Command/add.pm:10 lib/App/enman/Command/list.pm:9
@@ -64,7 +65,9 @@ msgstr "No hay repositorios se instalaron con enman"
 #: lib/App/enman/Command/list.pm:24
 msgid ""
 "Repositories enabled with enman: (so you can remove it with enman <name>)"
-msgstr "Repositorios habilitados con enman: (por lo que se puede quitar con enman <name>)"
+msgstr ""
+"Repositorios habilitados con enman: (por lo que se puede quitar con enman "
+"<name>)"
 
 #: lib/App/enman/Command/remove.pm:16
 #, perl-brace-format
@@ -74,7 +77,7 @@ msgstr "extraer '{repo_name}' - '{repository}'"
 #: lib/App/enman/Command/remove.pm:25
 #, perl-brace-format
 msgid "There is no repository '{repository}' installed in your system"
-msgstr "No hay ningún repositorio 'repositorio de {}' instalado en su sistema"
+msgstr "No hay ningún repositorio 'repositorio de {repository}' instalado en su sistema"
 
 #: lib/App/enman/Command/search.pm:12
 #, perl-brace-format
@@ -89,4 +92,4 @@ msgstr "No hay partidos para '{query}'"
 #: lib/App/enman/Command/search.pm:18
 #, perl-brace-format
 msgid "{matches} results for {query}"
-msgstr "resultados {partidos de} para consulta de {}"
+msgstr "resultados {matches} para consulta de {query}"
