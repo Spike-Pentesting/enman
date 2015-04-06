@@ -3,10 +3,12 @@ package App::enman::Command::add;
 use App::enman -command;
 use LWP::Simple;
 use App::enman::Utils;
+use Locale::TextDomain 'App-enman';
 
 sub execute {
     my ( $self, $opts, $args ) = @_;
-    error "You must run $0 with root permissions" and return 1 if $> != 0;
+    error( __("You must run  enman with root permissions") ) and return 1
+        if $> != 0;
     my @results = &App::enman::Command::search::search( @{$args} );
     if ( @results > 1 ) {
         info "the supplied repository matches more than one:";

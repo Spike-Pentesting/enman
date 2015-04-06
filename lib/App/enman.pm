@@ -7,7 +7,7 @@ use constant ETPREPO_DIR => $ENV{ETPREPO_DIR}
 use constant ENMAN_DB => $ENV{ENMAN_DB}
     || "https://raw.githubusercontent.com/Spike-Pentesting/enman-db/master/enman.db";
 use constant ETPSUFFIX => "entropy_enman_";
-our $VERSION = "0.1";
+our $VERSION = "0.2";
 
 1;
 __END__
@@ -23,6 +23,11 @@ enman - a layman equivalent for entropy repositories
     $ enman add "somerepo"
     $ enman remove "somerepo"
     $ enman search "something"
+
+    # get help:
+
+    $ enman help
+    $ enman commands
 
 =head1 DESCRIPTION
 

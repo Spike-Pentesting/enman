@@ -3,18 +3,32 @@ package App::enman::Command::search;
 use App::enman -command;
 use App::enman::Utils;
 use LWP::Simple;
+use Locale::TextDomain 'App-enman';
 
 sub execute {
     my ( $self, $opts, $args ) = @_;
     my $query = join( "", @{$args} );
-    info "Searching '$query' on the enman db...";
+
+    info( __x( "Searching '{query}' on the enman db...", query => $query ) );
     my @matches = &search($query);
-    notice "No matches for '$query'" and return 1 if @matches == 0;
-    notice @matches . " results for '$query'";
+
+    notice( __x( "No matches for '{query}'", query => $query ) ) and return 1
+        if @matches == 0;
+    notice(
+        __x("{matches} results for {query}",
+            matches => scalar(@matches),
+            query   => $query
+        )
+    );
     info "=" x 6;
     foreach my $match (@matches) {
-        notice "Repository: " . $match->[0];
-        info "\tConfiguration file: " . $match->[1];
+        notice(
+            __x( "Repository: {repository}", repository => $match->[0] ) );
+
+        info( "\t"
+                . __x( "Configuration file: {config}", config => $match->[0] )
+        );
+
     }
 }
 
