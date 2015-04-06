@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enman\n"
 "Report-Msgid-Bugs-To: mudler@dark-lab.net\n"
-"POT-Creation-Date: 2015-04-06 18:51+0200\n"
+"POT-Creation-Date: 2015-04-07 01:49+0200\n"
 "PO-Revision-Date: 2015-04-06 17:51+0000\n"
 "Last-Translator: necrose99 <mike@michaellawrenceit.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/enman/language/"
@@ -24,35 +24,46 @@ msgstr ""
 msgid "You must run enman with root permissions"
 msgstr "Debe ejecutar enman con permisos de root"
 
-#: lib/App/enman/Command/add.pm:15
+#: lib/App/enman/Command/add.pm:13
+#, fuzzy, perl-brace-format
+msgid "Repository '{repository}' already present in your system"
+msgstr ""
+"No hay ningún repositorio 'repositorio de {repository}' instalado en su "
+"sistema"
+
+#: lib/App/enman/Command/add.pm:22
 #, perl-brace-format
 msgid "'{repository}' repository matches more than one:"
 msgstr "más de uno coincide con '{repository}'  repositorio:"
 
-#: lib/App/enman/Command/add.pm:21 lib/App/enman/Command/search.pm:26
+#: lib/App/enman/Command/add.pm:28 lib/App/enman/Command/search.pm:26
 #, perl-brace-format
 msgid "Repository: {repository}"
 msgstr "Repositorio: {repository}"
 
-#: lib/App/enman/Command/add.pm:27 lib/App/enman/Command/search.pm:29
+#: lib/App/enman/Command/add.pm:34 lib/App/enman/Command/search.pm:29
 #, perl-brace-format
 msgid "Configuration file: {config}"
 msgstr "Archivo de configuración: {config}"
 
-#: lib/App/enman/Command/add.pm:36
+#: lib/App/enman/Command/add.pm:43
 #, perl-brace-format
 msgid "No matches for '{repository}'"
 msgstr "No hay partidos para  '{repository}'"
 
-#: lib/App/enman/Command/add.pm:40
+#: lib/App/enman/Command/add.pm:48
 #, perl-brace-format
 msgid "Installing '{repository}' in your system"
 msgstr "Instalación de '{repository}' en el sistema"
 
-#: lib/App/enman/Command/add.pm:48
+#: lib/App/enman/Command/add.pm:56
 #, perl-brace-format
 msgid "cannot write the repository file: {error}"
 msgstr "No se puede escribir el archivo del repositorio: {error}"
+
+#: lib/App/enman/Command/add.pm:59
+msgid "Now you are ready to go do an 'equo up' to sync the repository"
+msgstr ""
 
 #: lib/App/enman/Command/list.pm:13
 msgid "Repositories available in your system: "
@@ -77,7 +88,9 @@ msgstr "extraer '{repo_name}' - '{repository}'"
 #: lib/App/enman/Command/remove.pm:25
 #, perl-brace-format
 msgid "There is no repository '{repository}' installed in your system"
-msgstr "No hay ningún repositorio 'repositorio de {repository}' instalado en su sistema"
+msgstr ""
+"No hay ningún repositorio 'repositorio de {repository}' instalado en su "
+"sistema"
 
 #: lib/App/enman/Command/search.pm:12
 #, perl-brace-format

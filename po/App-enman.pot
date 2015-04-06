@@ -1,5 +1,5 @@
 # SOME DESCRIPTIVE TITLE.
-# Copyright (C) YEAR "mudler"
+# Copyright (C) YEAR mudler
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: App-enman 0.2\n"
 "Report-Msgid-Bugs-To: mudler@dark-lab.net\n"
-"POT-Creation-Date: 2015-04-06 18:51+0200\n"
+"POT-Creation-Date: 2015-04-07 01:49+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,34 +22,43 @@ msgstr ""
 msgid "You must run enman with root permissions"
 msgstr ""
 
-#: lib/App/enman/Command/add.pm:15
+#: lib/App/enman/Command/add.pm:13
+#, perl-brace-format
+msgid "Repository '{repository}' already present in your system"
+msgstr ""
+
+#: lib/App/enman/Command/add.pm:22
 #, perl-brace-format
 msgid "'{repository}' repository matches more than one:"
 msgstr ""
 
-#: lib/App/enman/Command/add.pm:21 lib/App/enman/Command/search.pm:26
+#: lib/App/enman/Command/add.pm:28 lib/App/enman/Command/search.pm:26
 #, perl-brace-format
 msgid "Repository: {repository}"
 msgstr ""
 
-#: lib/App/enman/Command/add.pm:27 lib/App/enman/Command/search.pm:29
+#: lib/App/enman/Command/add.pm:34 lib/App/enman/Command/search.pm:29
 #, perl-brace-format
 msgid "Configuration file: {config}"
 msgstr ""
 
-#: lib/App/enman/Command/add.pm:36
+#: lib/App/enman/Command/add.pm:43
 #, perl-brace-format
 msgid "No matches for '{repository}'"
 msgstr ""
 
-#: lib/App/enman/Command/add.pm:40
+#: lib/App/enman/Command/add.pm:48
 #, perl-brace-format
 msgid "Installing '{repository}' in your system"
 msgstr ""
 
-#: lib/App/enman/Command/add.pm:48
+#: lib/App/enman/Command/add.pm:56
 #, perl-brace-format
 msgid "cannot write the repository file: {error}"
+msgstr ""
+
+#: lib/App/enman/Command/add.pm:59
+msgid "Now you are ready to go do an 'equo up' to sync the repository"
 msgstr ""
 
 #: lib/App/enman/Command/list.pm:13
