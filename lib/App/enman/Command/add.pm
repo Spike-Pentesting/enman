@@ -9,6 +9,13 @@ sub execute {
     my ( $self, $opts, $args ) = @_;
     error( __("You must run enman with root permissions") ) and return 1
         if $> != 0;
+    info(
+        __x("Repository '{repository}' already present in your system",
+            repository => "@{$args}"
+        )
+        )
+        and return 1
+        if -e App::enman::ETPREPO_DIR() . App::enman::ETPSUFFIX() . "@{$args}";
     my @results = &App::enman::Command::search::search( @{$args} );
     if ( @results > 1 ) {
         info(
@@ -35,6 +42,7 @@ sub execute {
         notice(
             __x( "No matches for '{repository}'", repository => "@{$args}" )
         );
+        return 1;
     }
     info(
         __x("Installing '{repository}' in your system",
@@ -48,6 +56,6 @@ sub execute {
         __x( "cannot write the repository file: {error}", error => $! ) );
     print $EREPO $repo;
     close($EREPO);
-
+    info( __("Now you are ready to go do an 'equo up' to sync the repository") );
 }
 1;
