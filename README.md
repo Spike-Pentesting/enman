@@ -1,6 +1,6 @@
 # NAME
 
-App::enman
+enman
 
 # VERSION
 
@@ -39,24 +39,9 @@ It search and list the repository that matches your query
 # FOR REPOSITORY MANTAINERS
 If you want your repository available thru enman, send a PR on the [Enman-db GitHub repository](https://github.com/Spike-Pentesting/enman-db)
 
-# LICENSE
-
-Copyright (C) mudler.
-
-This library is free software; you can redistribute it and/or modify
-it under the same terms as Perl itself.
-
-# AUTHOR
-
-mudler <mudler@dark-lab.net>
-
-# AUTHOR
-
-mudler <mudler@dark-lab.net>
-
 # COPYRIGHT AND LICENSE
 
-This software is copyright (c) 2015 by "mudler".
+This software is copyright (c) 2015 by mudler.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.

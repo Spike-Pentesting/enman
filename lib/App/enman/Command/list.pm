@@ -6,7 +6,7 @@ use Locale::TextDomain 'App-enman';
 
 sub execute {
     my ( $self, $opt, $args ) = @_;
-    error( __("You must run  enman with root permissions") ) and return 1
+    error( __("You must run enman with root permissions") ) and return 1
         if $> != 0;
     opendir( my $dir, App::enman::ETPREPO_DIR() ) or die $!;
 

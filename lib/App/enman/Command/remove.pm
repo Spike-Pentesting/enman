@@ -6,13 +6,18 @@ use Locale::TextDomain 'App-enman';
 
 sub execute {
     my ( $self, $opt, $args ) = @_;
-    error( __("You must run  enman with root permissions") ) and return 1
+    error( __("You must run enman with root permissions") ) and return 1
         if $> != 0;
 
     my $repo
         = App::enman::ETPREPO_DIR() . App::enman::ETPSUFFIX() . "@{$args}";
     if ( -e $repo ) {
-        info( __x( "removing '{repository}'", repository => $repo ) );
+        info(
+            __x("removing '{repo_name}' - '{repository}'",
+                repo_name  => "@{$args}",
+                repository => $repo
+            )
+        );
         unlink($repo);
     }
     else {
