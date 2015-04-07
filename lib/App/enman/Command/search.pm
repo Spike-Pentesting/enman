@@ -26,7 +26,7 @@ sub execute {
             __x( "Repository: {repository}", repository => $match->[0] ) );
 
         info( "\t"
-                . __x( "Configuration file: {config}", config => $match->[0] )
+                . __x( "Configuration file: {config}", config => $match->[1] )
         );
 
     }
