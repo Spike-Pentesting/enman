@@ -1,6 +1,4 @@
-# NAME
-
-enman
+# enman - a layman equivalent for entropy repositories
 
 # VERSION
 
@@ -20,10 +18,6 @@ version 0.2
 # DESCRIPTION
 
 enman is the equivalent of layman for Sabayon, it allows you to easily add/remove/search repositories into your sabayon machine.
-
-# NAME
-
-enman - a layman equivalent for entropy repositories
 
 # COMMANDS
 
