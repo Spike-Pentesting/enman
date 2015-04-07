@@ -18,7 +18,7 @@ my %module_build_args = (
     "mudler <mudler\@dark-lab.net>"
   ],
   "dist_name" => "App-enman",
-  "dist_version" => "0.2",
+  "dist_version" => "0.3",
   "license" => "perl",
   "module_name" => "App::enman",
   "recommends" => {},
