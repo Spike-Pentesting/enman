@@ -15,7 +15,12 @@ sub execute {
         )
         )
         and return 1
-        if -e App::enman::ETPREPO_DIR() . App::enman::ETPSUFFIX() . "@{$args}";
+        if -e App::enman::ETPREPO_DIR()
+        . App::enman::ETPSUFFIX()
+        . "@{$args}";
+    error( __("You must supply the repository name") ) and return 1
+        if @{$args} == 0;
+
     my @results = &App::enman::Command::search::search( @{$args} );
     if ( @results > 1 ) {
         info(
@@ -56,6 +61,7 @@ sub execute {
         __x( "cannot write the repository file: {error}", error => $! ) );
     print $EREPO $repo;
     close($EREPO);
-    info( __("Now you are ready to go do an 'equo up' to sync the repository") );
+    info( __("Now you are ready to go do an 'equo up' to sync the repository")
+    );
 }
 1;

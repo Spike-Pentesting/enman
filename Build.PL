@@ -18,13 +18,15 @@ my %module_build_args = (
     "mudler <mudler\@dark-lab.net>"
   ],
   "dist_name" => "App-enman",
-  "dist_version" => "0.3",
+  "dist_version" => "0.4",
   "license" => "perl",
   "module_name" => "App::enman",
   "recommends" => {},
   "recursive_test_files" => 1,
   "requires" => {},
-  "script_files" => [],
+  "script_files" => [
+    "bin/enman"
+  ],
   "test_requires" => {}
 );
 

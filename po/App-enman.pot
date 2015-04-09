@@ -6,9 +6,9 @@
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: App-enman 0.2\n"
+"Project-Id-Version: App-enman 0.4\n"
 "Report-Msgid-Bugs-To: mudler@dark-lab.net\n"
-"POT-Creation-Date: 2015-04-07 01:49+0200\n"
+"POT-Creation-Date: 2015-04-09 12:29+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -27,37 +27,41 @@ msgstr ""
 msgid "Repository '{repository}' already present in your system"
 msgstr ""
 
-#: lib/App/enman/Command/add.pm:22
+#: lib/App/enman/Command/add.pm:21
+msgid "You must supply the repository name"
+msgstr ""
+
+#: lib/App/enman/Command/add.pm:27
 #, perl-brace-format
 msgid "'{repository}' repository matches more than one:"
 msgstr ""
 
-#: lib/App/enman/Command/add.pm:28 lib/App/enman/Command/search.pm:26
+#: lib/App/enman/Command/add.pm:33 lib/App/enman/Command/search.pm:26
 #, perl-brace-format
 msgid "Repository: {repository}"
 msgstr ""
 
-#: lib/App/enman/Command/add.pm:34 lib/App/enman/Command/search.pm:29
+#: lib/App/enman/Command/add.pm:39 lib/App/enman/Command/search.pm:29
 #, perl-brace-format
 msgid "Configuration file: {config}"
 msgstr ""
 
-#: lib/App/enman/Command/add.pm:43
+#: lib/App/enman/Command/add.pm:48
 #, perl-brace-format
 msgid "No matches for '{repository}'"
 msgstr ""
 
-#: lib/App/enman/Command/add.pm:48
+#: lib/App/enman/Command/add.pm:53
 #, perl-brace-format
 msgid "Installing '{repository}' in your system"
 msgstr ""
 
-#: lib/App/enman/Command/add.pm:56
+#: lib/App/enman/Command/add.pm:61
 #, perl-brace-format
 msgid "cannot write the repository file: {error}"
 msgstr ""
 
-#: lib/App/enman/Command/add.pm:59
+#: lib/App/enman/Command/add.pm:64
 msgid "Now you are ready to go do an 'equo up' to sync the repository"
 msgstr ""
 

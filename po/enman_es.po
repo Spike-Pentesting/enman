@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: enman\n"
 "Report-Msgid-Bugs-To: mudler@dark-lab.net\n"
-"POT-Creation-Date: 2015-04-07 01:49+0200\n"
+"POT-Creation-Date: 2015-04-09 12:29+0200\n"
 "PO-Revision-Date: 2015-04-06 17:51+0000\n"
 "Last-Translator: necrose99 <mike@michaellawrenceit.com>\n"
 "Language-Team: Spanish (http://www.transifex.com/projects/p/enman/language/"
@@ -31,37 +31,41 @@ msgstr ""
 "No hay ningún repositorio 'repositorio de {repository}' instalado en su "
 "sistema"
 
-#: lib/App/enman/Command/add.pm:22
+#: lib/App/enman/Command/add.pm:21
+msgid "You must supply the repository name"
+msgstr ""
+
+#: lib/App/enman/Command/add.pm:27
 #, perl-brace-format
 msgid "'{repository}' repository matches more than one:"
 msgstr "más de uno coincide con '{repository}'  repositorio:"
 
-#: lib/App/enman/Command/add.pm:28 lib/App/enman/Command/search.pm:26
+#: lib/App/enman/Command/add.pm:33 lib/App/enman/Command/search.pm:26
 #, perl-brace-format
 msgid "Repository: {repository}"
 msgstr "Repositorio: {repository}"
 
-#: lib/App/enman/Command/add.pm:34 lib/App/enman/Command/search.pm:29
+#: lib/App/enman/Command/add.pm:39 lib/App/enman/Command/search.pm:29
 #, perl-brace-format
 msgid "Configuration file: {config}"
 msgstr "Archivo de configuración: {config}"
 
-#: lib/App/enman/Command/add.pm:43
+#: lib/App/enman/Command/add.pm:48
 #, perl-brace-format
 msgid "No matches for '{repository}'"
 msgstr "No hay partidos para  '{repository}'"
 
-#: lib/App/enman/Command/add.pm:48
+#: lib/App/enman/Command/add.pm:53
 #, perl-brace-format
 msgid "Installing '{repository}' in your system"
 msgstr "Instalación de '{repository}' en el sistema"
 
-#: lib/App/enman/Command/add.pm:56
+#: lib/App/enman/Command/add.pm:61
 #, perl-brace-format
 msgid "cannot write the repository file: {error}"
 msgstr "No se puede escribir el archivo del repositorio: {error}"
 
-#: lib/App/enman/Command/add.pm:59
+#: lib/App/enman/Command/add.pm:64
 msgid "Now you are ready to go do an 'equo up' to sync the repository"
 msgstr ""
 
